@@ -24,6 +24,13 @@ namespace TCE.Identity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            var builder = services.AddIdentityServer()
+            .AddInMemoryApiResources(Config.Apis)
+            .AddInMemoryClients(Config.Clients);
+
+            // not recommended for production - you need to store your key material somewhere secure
+            builder.AddDeveloperSigningCredential();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +50,7 @@ namespace TCE.Identity
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseIdentityServer();
 
             app.UseAuthorization();
 
