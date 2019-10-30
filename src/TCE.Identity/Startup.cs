@@ -26,6 +26,7 @@ namespace TCE.Identity
             services.AddControllersWithViews();
 
             var builder = services.AddIdentityServer()
+            .AddInMemoryIdentityResources(Config.Ids)
             .AddInMemoryApiResources(Config.Apis)
             .AddInMemoryClients(Config.Clients);
 
