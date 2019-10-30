@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCE.Identity", "src\TCE.Ide
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCE.Api", "src\TCE.Api\TCE.Api.csproj", "{C5D97E05-20FC-42D1-A148-1922E0F9DE0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCE.Web", "src\TCE.Web\TCE.Web.csproj", "{54F463C5-4440-43A1-9951-A74D5A4A83B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5D97E05-20FC-42D1-A148-1922E0F9DE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D97E05-20FC-42D1-A148-1922E0F9DE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D97E05-20FC-42D1-A148-1922E0F9DE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F463C5-4440-43A1-9951-A74D5A4A83B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F463C5-4440-43A1-9951-A74D5A4A83B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F463C5-4440-43A1-9951-A74D5A4A83B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F463C5-4440-43A1-9951-A74D5A4A83B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
