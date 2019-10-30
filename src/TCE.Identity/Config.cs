@@ -29,7 +29,8 @@ namespace TCE.Identity
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("secret".Sha256()) },
 
-                    AllowedScopes = { "api_tce" }
+                    AllowedScopes = { "api_tce" },
+                    AccessTokenLifetime = 300 //5 minutes
                 }, 
             };
 
