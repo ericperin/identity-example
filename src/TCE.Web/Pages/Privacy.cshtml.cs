@@ -17,8 +17,11 @@ namespace TCE.Web.Pages
             _logger = logger;
         }
 
+        public IDictionary<string, string> Properties { get; set; }
+
         public void OnGet()
         {
+            Properties = HttpContext.AuthenticateAsync().Result.Properties.Items;
         }
     }
 }

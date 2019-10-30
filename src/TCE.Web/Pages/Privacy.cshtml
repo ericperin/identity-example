@@ -9,7 +9,6 @@
 
 
 <h2>Claims</h2>
-
 <dl>
     @foreach (var claim in User.Claims)
     {
@@ -18,12 +17,11 @@
     }
 </dl>
 
-<h2>Properties ???</h2>
-
-@*<dl>
-    @foreach (var prop in (await Context.AuthenticateAsync()).Properties.Items)
+<h2>Properties</h2>
+<dl>
+    @foreach (var prop in Model.Properties)
     {
         <dt>@prop.Key</dt>
         <dd>@prop.Value</dd>
     }
-</dl>*@
+</dl>
