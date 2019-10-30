@@ -11,6 +11,7 @@ namespace TCE.Identity
         public ErrorViewModel()
         {
         }
+        public string RequestId { get; set; }
 
         public ErrorViewModel(string error)
         {
